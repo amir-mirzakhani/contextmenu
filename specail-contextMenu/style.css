@@ -1,0 +1,73 @@
+/* this is a style of the click right menu for index.html
+developer : AmirrzaMirzakhani instagram : amir_.kuala */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.container{
+  visibility: hidden;
+  position: absolute;
+  background-color: white;
+  width: 300px;
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.container .menu{
+  list-style-type: none;
+  padding: 0 10px ;
+}
+.menu .item{
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.menu .item:hover{
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+.menu .item i{
+  padding-right: 10px;
+}
+.container .setting{
+  border-top: solid 1px #989ca3;
+  margin-top: 10px;
+  padding: 5px;
+}
+.container .item .share-item {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  
+}
+.item:hover .social-share {
+  visibility: visible;
+  top: -10px;
+}
+.item .social-share {
+  position: absolute;
+  left: 270px;
+  background-color: #f2f2f2;
+  padding: 10px 10px;
+  border-radius: 10px;
+  list-style-type: none;
+  visibility: hidden;
+}
+.social-share li{
+  margin: 10px 0;
+  display: flex;
+  font-size: 15px;
+  padding: 10px;
+}
+.social-share li:hover {
+  background-color: #989ca3;
+  border-radius: 5px;
+}
